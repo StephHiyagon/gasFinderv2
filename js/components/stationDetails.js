@@ -1,5 +1,5 @@
 const StationDetails = (update) => {
-  const section = $("<section></section>");
+  const section = $("<section class='container'></section>");
 
     const stationsTodo=state.stations;
     console.log(stationsTodo);
@@ -7,7 +7,7 @@ const StationDetails = (update) => {
     console.log(tamano);
 
     for(var i=0;i<tamano;i++){
-    const div = $("<div class='details'></div>");
+    const div = $('<div class="details" id="'+stationsTodo[i].district+'"></div>');
     const parrafo1 = $('<h2>'+ stationsTodo[i].name +'</h2>');
     const parrafo2= $('<p>'+ stationsTodo[i].address +'</p>');
     const parrafo3= $('<p>'+ stationsTodo[i].district +'</p>');

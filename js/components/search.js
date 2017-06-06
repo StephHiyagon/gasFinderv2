@@ -11,5 +11,15 @@ const Search = (update) => {
   div1.append(div2);
 
 
-  return div1;
-}
+  input.on('keyup',(e)=>{
+    const stationsTodo=state.stations;
+    console.log(stationsTodo);
+    let ingreso=$(e.target).val().toLowerCase();
+    console.log(ingreso);
+    filterByDistrict(stationsTodo,ingreso);
+
+    // reRender(,,)
+  });
+      
+      return div1;
+  }

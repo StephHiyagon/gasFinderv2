@@ -33,3 +33,14 @@ input{
   color:gray;
   margin:auto 10px;
 }
+
+div.details{
+  border: 1px solid gray;
+  height: 100px;
+}
+
+.right{
+  float:right;
+  margin-right: 20px;
+  color:black;
+}

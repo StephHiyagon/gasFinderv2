@@ -5,6 +5,7 @@ const render = (root) => {
   const wrapper = $('<div class="wrapper"></div>');
   wrapper.append(Header(_ => render(root)));
   wrapper.append(Search(_ => render(root)));
+  wrapper.append(StationDetails(_ => render(root)));
   root.append(wrapper);
 }
 
